@@ -1,0 +1,28 @@
+@use "global" as *;
+.section-header{
+  color: $blue;
+}
+.section-header__title{
+  font-size: rem(13);
+  letter-spacing: 0.05em;
+  line-height: calc(13 / 32);
+  font-weight: $bold;
+  @include mq("md"){
+    font-size: rem(14);
+  }
+}
+.section-header__subtitle{
+  letter-spacing: 0.05em;
+  font-size: rem(30);
+  line-height: calc(37 / 30);
+  font-weight: $bold;
+  font-family: $en-font;
+  text-transform: uppercase;
+  @include mq("md"){
+    font-size: rem(34);
+  }
+}
+
+.section-header--center{
+  text-align: center;
+}

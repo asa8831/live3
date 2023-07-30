@@ -1,0 +1,18 @@
+@use "global" as *;
+.footer-nav{
+  
+}
+.footer-nav__items{ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(20); //←要素の間を20ずつ開ける
+  text-transform: uppercase;
+}
+.footer-nav__item a{
+  color: $white;
+  font-family: $en-font;
+  font-size: rem(12);
+  font-weight: $bold;
+  line-height: 1.25;
+  
+}

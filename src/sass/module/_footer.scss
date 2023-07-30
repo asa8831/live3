@@ -1,0 +1,19 @@
+@use "global" as *;
+.footer{
+  background: $bg-black;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+}
+.footer__inner{
+  padding: 0 rem(30);
+  margin: auto;
+}
+.footer__copy{
+  text-align: center;
+  color: $white;
+  font-family: $en-font;
+  font-size: rem(10);
+  // line-height: 1.25;
+  line-height: 1;
+  margin-top: rem(30);
+}

@@ -1,0 +1,22 @@
+@use "global" as *;
+.header {
+  height: rem(62); // headerの高さ確保、paddingでヘッダーの高さはとらないほうがいい
+  position: fixed;
+  width: 100%;
+  z-index: 7777;
+}
+.header__inner{
+ height: inherit; // 親要素の高さheight: 5rem;を継承する,これで親とinnerの高さを合わせる
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 rem(15);
+}
+.header__logo{
+  color: $white;
+  font-size: rem(18);
+  font-weight: $bold;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}

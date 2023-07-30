@@ -1,41 +1,143 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="noindex" />
-  <!-- meta情報 -->
-  <title>CodeUps</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./assets/js/script.js"></script>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>CodeUps</title>
+    <meta name="description" content />
+    <meta name="keywords" content />
+    <!-- ogp -->
+    <meta property="og:title" content />
+    <meta property="og:type" content />
+    <meta property="og:url" content />
+    <meta property="og:image" content />
+    <meta property="og:site_name" content />
+    <meta property="og:description" content />
+    <!-- ファビコン -->
+    <link rel="”icon”" href />
+    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <header>
 
-  </header>
-  <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
-    </div>
-  </main>
-  <footer>
+    </header>
+    <main>
+      <header class="header">
+        <div class="header__inner">
 
-  </footer>
-</body>
+          <h1 class="header__logo">
+            <a class="header__logoLink" href>pondesign</a>
+          </h1>
+
+          <div class="header__drawer hamburger js-hamburger u-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav class="header__nav menu js-drawer-menu">
+            <ul class="menu__items">
+              <li class="menu__item"><a href="#">ABOUT</a></li>
+              <li class="menu__item"><a href="#">SERVICE</a></li>
+              <li class="menu__item"><a href="#">COMPANY</a></li>
+              <li class="menu__item"><a href="#">CONTACT</a></li>
+            </ul>
+         </nav>
+        </div>
+      </header>
+
+      <!-- fv -->
+      <section class="top-mv mv">
+        <div class="mv__inner">
+          <div class="mv__header">
+            <h2 class="mv__title">web design<br class="u-mobile">specialist</h2>
+            <p class="mv__subtitle">お客様の夢を叶える<br class="u-mobile">Webサイトを制作</p>
+            <div class="mv__button">
+              <a href class="mv-button">contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ニュース -->
+      <section class="top-news news">
+        <div class="news__inner">
+          <div class="news__title section-header section-header--center">
+            <div class="section-header__subtitle">
+              news
+            </div>
+            <h2 class="section-header__title">
+              ニュース
+            </h2>
+          </div>
+
+          <div class="news-list tag-list tag-list__items"><!-- 全体を統括 -->
+            <!-- WPでループ処理が入るのがここ -->
+            <div class="tag-list__item"><!-- お知らせ１こ PC横並び -->
+              <div class="tag-list__info">
+                <time class="tag-list__date" datetime="2021-11-18">
+                  <!-- WPで時間に関するものが入ってくるときはtimeなので日時が動的に入ってきそうなものはtimeにしておく -->
+                  2021.11.18
+                </time>
+                <span class="tag-list__category">お知らせ
+              </div>
+              <div class="tag-list__text">
+                <a>Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+              </div>
+            </div>
+            <!-- ループ終了 -->
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- タイトル -->
+      <div class="section-header section-header--center">
+        <div class="section-header__subtitle">
+          contact
+        </div>
+        <h2 class="section-header__title">
+          お問い合わせ
+        </h2>
+      </div>
+
+      <!-- ボタン -->
+      <div>
+        <a href class="button">more</a>
+      </div>
+    </main>
+    <footer class="footer"><!-- 親 -->
+      <div class="footer__inner"><!-- 子 -->
+        <nav class="footer__nav footer-nav"><!-- 子 --><!-- 親 -->
+          <!-- footer__nav→footerの子要素(Element)にして独自の余白や装飾はこっちにつける　 footer-nav→親要素(Block)のclassもつけて、これを起点にしてナビをつくっていく-->
+          <ul class="footer-nav__items"><!-- 子 -->
+            <li class="footer-nav__item"><a href>home</a></li>
+            <li class="footer-nav__item"><a href>news</a></li>
+            <li class="footer-nav__item"><a href>home</a></li>
+            <li class="footer-nav__item"><a href>home</a></li>
+            <li class="footer-nav__item"><a href>home</a></li>
+            <li class="footer-nav__item"><a href>home</a></li>
+            <li class="footer-nav__item"><a href>home</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__copy">
+          <small>&copy;pon design</small>
+        </div>
+      </div>
+    </footer>
+  </body>
 
 </html>

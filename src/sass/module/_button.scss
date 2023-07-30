@@ -1,0 +1,17 @@
+@use "global" as *;
+.button{
+  font-size: rem(14);
+  font-weight: $bold;
+  // line-height: calc(98/15);
+  letter-spacing: 0.05em;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  background: red;
+  padding: rem(23);
+  text-transform: uppercase;
+  // width: 100%;
+  min-width: rem(200);
+  background: transparent linear-gradient(90deg, #7633A4 0%, #250D65 100%) 0% 0% no-repeat padding-box;
+  border-radius: rem(50);
+}
